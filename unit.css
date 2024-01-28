@@ -1,0 +1,89 @@
+/*images in the page CSS*/
+img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+/*overall html css font*/
+body {
+    font-family: helvetica;
+}
+
+/*header section*/
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.backbutton {
+    background-color: #8d8d8d;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.header-text {
+    margin: 0; 
+    flex-grow: 1; 
+    text-align: center;
+}
+
+/*responsive code*/
+.flex-container {
+    background-color: #c0ce01;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*units in nct*/
+.units {
+    margin: 10px;
+    text-align: center;
+    flex-basis: 30%;
+    text-decoration: none;
+    color: black;
+}
+
+.units:last-child {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*responsive display code*/
+@media (max-width: 992px) {
+    .units {
+        flex-basis: 40%;
+    }
+    .units:last-child {
+        margin-left: 0%;
+        margin-right:0%;
+    }
+}
+
+/*footer with signup form*/
+.formlink {
+    background-color: #7d7d7d;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,227 @@
+/*CSS for whole page*/
+html {
+    background-color: #c0ce01;
+}
+
+body {
+    font-family: helvetica;
+}
+
+/*header content*/
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.backbutton {
+    background-color: #8d8d8d;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.header-text {
+    margin: 0; 
+    flex-grow: 1; 
+    text-align: center;
+    font-family: SMTOWNOTF-Bold;
+}
+
+/*navigation bar*/
+nav {
+    padding: 30px;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navheader {
+    text-align: center;
+    color: black;
+}
+
+/*for responsiveness and content alignment*/
+.flex-container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*members section*/
+#members {
+    text-align: center;
+}
+
+.members {
+    margin: 10px;
+    text-align: center;
+    flex-basis: 30%;
+    text-decoration: none;
+    color: black;
+    border-image: 100%;
+}
+
+.memberimg {
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 5% 5%;
+    width: 200px;
+    height: 200px;
+}
+
+/*music videos section*/
+.musicvideos {
+    text-align: center;
+}
+
+.mvs {
+    font-size: 20px;
+    color: black;
+}
+
+/*albums section*/
+#albums{text-align: center}
+
+.album {
+    margin: 10px;
+    flex-basis: 40%;
+    justify-content: center;
+}
+
+/*merch section*/
+.merch{text-align: center;}
+
+/*responsive for the above sections*/
+@media (max-width: 992px) {
+    .album {
+        flex-basis: 100%;
+    }
+    .members {
+        flex-basis: 40%;
+    }
+}
+
+/*concerts section + slideshow*/
+#concerts {text-align: center;}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+color: #c0ce01;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+/*socials section*/
+#socials {text-align: center}
+
+.social {
+    margin: 10px;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.socialicon {
+    width: 50px;
+    height: 50px;
+}
+
+/*footer*/
+.formlink {
+    background-color: #7d7d7d;
+    color: white;
+    padding: 30px;  
+    text-align: center;
+    }
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
